@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img{
+            position: absolute;
+            top: 100px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+<img src="../淡出淡入轮播图/u=1895734806,381157480&fm=27&gp=0.jpg" alt=""/>
+<h1>第1个</h1>
+
+<h1>第2个</h1>
+
+<h1>第3个</h1>
+
+<h1>第4个</h1>
+
+<h1>第5个</h1>
+
+<h1>第6个</h1>
+
+<h1>第7个</h1>
+
+<h1>第8个</h1>
+
+<h1>第9个</h1>
+
+<h1>第10个</h1>
+
+<h1>第11个</h1>
+
+<h1>第12个</h1>
+
+<h1>第13个</h1>
+
+<h1>第14个</h1>
+
+<h1>第15个</h1>
+
+<h1>第16个</h1>
+
+<h1>第17个</h1>
+
+<h1>第18个</h1>
+
+<h1>第19个</h1>
+
+<h1>第20个</h1>
+
+<h1>第21个</h1>
+
+<h1>第22个</h1>
+
+<h1>第23个</h1>
+
+<h1>第24个</h1>
+
+<h1>第25个</h1>
+
+<h1>第26个</h1>
+
+<h1>第27个</h1>
+
+<h1>第28个</h1>
+
+<h1>第29个</h1>
+
+<h1>第30个</h1>
+
+<h1>第31个</h1>
+
+<h1>第32个</h1>
+
+<h1>第33个</h1>
+
+<h1>第34个</h1>
+
+<h1>第35个</h1>
+
+<h1>第36个</h1>
+
+<h1>第37个</h1>
+
+<h1>第38个</h1>
+
+<h1>第39个</h1>
+
+<h1>第40个</h1>
+
+<h1>第41个</h1>
+
+<h1>第42个</h1>
+
+<h1>第43个</h1>
+
+<h1>第44个</h1>
+
+<h1>第45个</h1>
+
+<h1>第46个</h1>
+
+<h1>第47个</h1>
+
+<h1>第48个</h1>
+
+<h1>第49个</h1>
+
+<h1>第50个</h1>
+
+<h1>第51个</h1>
+
+<h1>第52个</h1>
+
+<h1>第53个</h1>
+
+<h1>第54个</h1>
+
+<h1>第55个</h1>
+
+<h1>第56个</h1>
+
+<h1>第57个</h1>
+
+<h1>第58个</h1>
+
+<h1>第59个</h1>
+
+<h1>第60个</h1>
+
+<button>点击我</button>
+<button class="qqq">想要到</button>
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+<script>
+    $(function(){
+//        window 浏览器 窗口   scroll()鼠标滚动事件
+        $(window).scroll(function(){
+
+            $('img').stop().animate({
+//                获取当前页面被卷走的距离  scrollTop()被卷走的距离  +100是'img'top：100的距离+上scrolltop()被卷走的距离
+                top:$(document).scrollTop()+100
+            })
+
+        })
+
+        $('button').on('click',function(){
+            $('body').stop().animate({
+               scrollTop:0
+            })
+
+        })
+$('.qqq').on('click',function(){
+    $('body').stop().animate({
+        scrollTop:$('h1').eq(19).offset().top
+    })
+})
+    })
+</script>
+
+
+</body>
+</html>
